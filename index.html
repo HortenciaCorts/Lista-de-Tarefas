@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1>Lista de tarefas</h1>
+            <button id="button-modal">Adicionar tarefa</button>
+            <div class="container-task">
+                <div class="header-item">
+                    <p id="checked"><i data-feather="chevrons-down"></i></p>
+                    <p id="descript">Descrição <i data-feather="chevron-down"></i></p>
+                </div>
+                <div class="to-do-list">
+                    <!-- <div class="item">
+                    <input type="checkbox" checked="checked">
+                    <div class="details">
+                        <p>Estudar</p>
+                        <div class="edit">
+                            <i data-feather="edit"></i>
+                            <i data-feather="x-circle"></i>
+                        </div>
+                    </div>
+                </div> -->
+                </div>
+            </div>
+    </main>
+    <div class="modal-overlay">
+        <div class="modal">
+            <form action="">
+                <i data-feather="x-circle" id="close"></i>
+                <h3>Nova Tarefa</h3>
+                <input type="text" id="new-task">
+                <p class="erro"></p>
+                <div class="buttons">
+                    <a href="">Cancel</a>
+                    <button id="newItem">Adicionar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
